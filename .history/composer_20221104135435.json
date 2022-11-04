@@ -16,11 +16,11 @@
         {
             "name": "Dwarfex",
             "email": "dwarfex@somecoding.de",
-            "homepage": "https://somecoding.de"
+            "homepage": "https://github.com/dq042000/laminas-doctrine-encrypt"
         }
     ],
     "require": {
-        "php": " ~7.2 || 8.0.* || ^8.1",
+        "php": " ~7.2 || 8.0.* || 8.1.*",
         "ext-sodium": "*",
         "doctrine/annotations": "^1.6",
         "doctrine/orm": "^2.6",
