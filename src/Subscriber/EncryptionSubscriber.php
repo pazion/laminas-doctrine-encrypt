@@ -87,7 +87,7 @@ class EncryptionSubscriber implements EventSubscriber
      */
     public function onFlush(OnFlushEventArgs $args)
     {
-        $objectManager = $args->getEntityManager();
+        $objectManager = $args->getObjectManager();
         $unitOfWork = $objectManager->getUnitOfWork();
         $this->postFlushDecryptQueue = [];
 
@@ -108,7 +108,7 @@ class EncryptionSubscriber implements EventSubscriber
      *
      * @throws \Doctrine\ORM\Mapping\MappingException
      */
-    private function entityOnFlush(object $entity, ObjectManager $objectManager)
+    private function entityOnFlush(object $entity, ObjectManager|EntityManager $objectManager)
     {
         $objId = spl_object_hash($entity);
         $fields = [];
