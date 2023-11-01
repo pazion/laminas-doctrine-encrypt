@@ -8,9 +8,9 @@ Provides a Laminas & Doctrine 2 encryption module. With support for Mezzio.
     
 # Requirements
 
- * PHP 7.2 or greater (must have Sodium extension enabled)
+ * PHP 8.1 or greater (must have Sodium extension enabled)
  
-If you're on Windows, using Xampp, the PHP 7.2 installation might not automatically enable the Sodium extension. If this
+If you're on Windows, using Xampp, the PHP 8.1 installation might not automatically enable the Sodium extension. If this
 the case, you'll get an error (`'This is not implemented, as it is not possible to securely wipe memory from PHP'`). 
 Enable Sodium for PHP by adding this to your `php.ini` file:
 
